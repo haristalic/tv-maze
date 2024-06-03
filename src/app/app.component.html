@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<router-outlet>
+  <tv-maze-search (searchEventChange)="filter($event)"></tv-maze-search>
+  @if (noData){ <tv-maze-no-data></tv-maze-no-data> } 
+  @if (loader){
+  <tv-maze-loader></tv-maze-loader>
+  }      @for (show of shows; track show.id) {
+    <tv-maze-show-card [show]="show" ></tv-maze-show-card>
+
+  }
+
+</router-outlet>

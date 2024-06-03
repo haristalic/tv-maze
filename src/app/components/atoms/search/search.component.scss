@@ -1,0 +1,27 @@
+.tv-maze-input {
+    position: relative;
+
+    &--form-control {
+        width: 100%;
+        border-radius: 5px;
+        border: solid 1.5px #D3D3D3;
+        height: 25px;
+
+        &:focus {
+            box-shadow: 0 0 5pt 2pt #D3D3D3;
+            outline-width: 0px;
+        }
+    }
+
+    &--clear {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        right: 20px;
+    }
+
+    button{
+        border: none;
+        background: transparent;
+    }
+}

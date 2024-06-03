@@ -1,0 +1,14 @@
+<div class="tv-maze-input">
+    <input
+      type="text"
+      class="tv-maze-input--form-control"
+      [placeholder]="placeholder"
+      [(ngModel)]="searchValue"
+      [disabled]="inputDisabled"
+      (ngModelChange)="searchValueChange(searchValue)" />
+    @if (searchValue) {
+      <div class="tv-maze-input--icon tv-maze-input--clear">
+        <button (click)="clickClear()">X</button>
+      </div>
+    }
+  </div>
