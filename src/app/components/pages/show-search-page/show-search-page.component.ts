@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { debounceTime, delay, finalize } from 'rxjs';
 import { Show } from '../../../shared/models/show';
-import { ShowService } from '../../../shared/services';
+import { ShowService } from '../../../shared/services/show.service';
 import { LoaderComponent, NoDataComponent, SearchComponent } from '../../atoms';
 import { ShowCardComponent } from '../../molecules';
 

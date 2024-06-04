@@ -1,5 +1,7 @@
 # TvMazeApp
 
+> Maze TV API-based webapp, receives TV show episodes with all data about that TV show. The Webapp has two interfaces: A home page, showing a list of Tv show episodes you can like. And single show page with more data about the TV show.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
 ## Development server

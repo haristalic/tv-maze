@@ -1,0 +1,31 @@
+<div class="tv-maze-single-show--layout">
+  <div class="flex">
+    <img src="{{ showDetails?.image?.medium }}" alt="" />
+    <div class="tv-maze-single-show--description">
+      <h2>{{ showDetails?.name }}</h2>
+      <div class="px-6" [innerHTML]="showDetails?.summary"></div>
+      <div>
+        Type: <b>{{ showDetails?.type }}</b>
+      </div>
+      <div>
+        Status: <b>{{ showDetails?.status }}</b>
+      </div>
+      @if (showDetails?.schedule?.days && showDetails?.schedule?.time ) {
+      <div>
+        Schedule:
+        {{ showDetails?.schedule?.days + " " + showDetails?.schedule?.time }}
+      </div>
+      }
+      <div>
+        Premiered: <b>{{ showDetails?.premiered | date }}</b>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="tv-maze-single-show--genres">
+      @for (genre of showDetails?.genres; track genre) {
+      <button>{{ genre }}</button>
+      }
+    </div>
+  </div>
+</div>
