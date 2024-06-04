@@ -5,17 +5,19 @@
         width: 100%;
         border-radius: 5px;
         border: solid 1.5px #D3D3D3;
-        height: 25px;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 10px;
 
         &:focus {
-            box-shadow: 0 0 5pt 2pt #D3D3D3;
+            box-shadow: 0 0 5px 2px #D3D3D3;
             outline-width: 0px;
         }
     }
 
     &--clear {
         position: absolute;
-        top: 45%;
+        top: 50%;
         transform: translateY(-50%);
         right: 20px;
     }
@@ -23,5 +25,6 @@
     button{
         border: none;
         background: transparent;
+        font-size: 20px;
     }
 }

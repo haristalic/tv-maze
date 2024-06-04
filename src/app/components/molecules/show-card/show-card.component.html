@@ -1,6 +1,7 @@
-<div>
-    <img [src]="show?.image?.medium" alt="no-data" />
-    <p>{{show?.name}}</p>
-    <div [innerHTML]="show?.summary"></div>
-
-</div>
+  <div class="tv-maze-card" (click)="goToDetails(show!.id)">
+    <img [src]="show?.image?.medium" [alt]="show?.name +' - '+ show?.status" class="tv-maze-card--img" />
+    <div class="tv-maze-card--content">
+      <h2 class="tv-maze-card--title">{{ show?.name }}</h2>
+      <div class="tv-maze-card--summary" [innerHTML]="show?.summary"></div>
+    </div>
+  </div>

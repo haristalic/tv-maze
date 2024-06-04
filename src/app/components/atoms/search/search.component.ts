@@ -10,7 +10,7 @@ import { Subject,debounceTime, distinctUntilChanged, } from 'rxjs';
   styleUrl: './search.component.scss',
 })
 export class SearchComponent {
-  @Input() placeholder = 'Search Show';
+  @Input() placeholder = 'Search Shows';
   @Input() inputDisabled = false;
   @Output() searchEventChange = new EventEmitter<string>();
 
