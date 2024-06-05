@@ -5,15 +5,21 @@
         width: 100%;
         border-radius: 5px;
         border: solid 1.5px #D3D3D3;
-        height: 50px;
+        height: 35px;
         font-size: 20px;
         padding-left: 10px;
         border-radius: 10px;
 
         &:focus {
-            box-shadow: 0 0 5px 2px #D3D3D3;
+            box-shadow: 0 0 5px 1px #a1a0a0;
             outline-width: 0px;
         }
+
+    }
+
+    ::placeholder {
+        color: #d0caca;
+        opacity: 1;
     }
 
     &--clear {
@@ -23,7 +29,7 @@
         right: 20px;
     }
 
-    button{
+    button {
         border: none;
         background: transparent;
         font-size: 20px;

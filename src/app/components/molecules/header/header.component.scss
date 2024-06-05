@@ -1,0 +1,41 @@
+.tv-maze-header {
+    padding: 10px 20px;
+    background-color: #3f3f3f;
+
+    &--logo {
+        img {
+            height: 40px;
+        }
+    }
+
+    &--content {
+        max-width: 80rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &--search {
+        margin: auto;
+        width: 30%;
+    }
+
+    @media (max-width: 600px) {
+        &--header-content {
+            display: block;
+            width: 100%;
+        }
+
+        &--logo {
+            display: flex;
+            justify-content: center;
+            margin: 7px 0;
+        }
+
+        &--search {
+            width: 80%;
+        }
+
+    }
+}

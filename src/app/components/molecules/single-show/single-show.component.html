@@ -1,6 +1,10 @@
 <div class="tv-maze-single-show--layout">
   <div class="flex">
-    <img src="{{ showDetails?.image?.medium }}" alt="" />
+    <img
+      src="{{ showDetails?.image?.medium }}"
+      [alt]="'Show Status:' + showDetails?.status"
+      [class.no-img]="!showDetails?.image?.medium"
+    />
     <div class="tv-maze-single-show--description">
       <h2>{{ showDetails?.name }}</h2>
       <div class="px-6" [innerHTML]="showDetails?.summary"></div>

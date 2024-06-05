@@ -3,12 +3,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Show } from '../../../shared/models';
 import { ShowService } from '../../../shared/services/show.service';
-import { SingleShowComponent } from '../../molecules/single-show/single-show.component';
+import { HeaderComponent,SingleShowComponent } from '../../molecules';
 
 @Component({
   selector: 'tv-maze-single-show-page',
   standalone: true,
-  imports: [DatePipe, SingleShowComponent],
+  imports: [DatePipe, SingleShowComponent,HeaderComponent],
   templateUrl: './single-show-page.component.html',
   styleUrl: './single-show-page.component.scss',
 })

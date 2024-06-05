@@ -3,17 +3,22 @@ import { debounceTime, delay, finalize } from 'rxjs';
 import { Show } from '../../../shared/models/show';
 import { ShowService } from '../../../shared/services/show.service';
 import { LoaderComponent, NoDataComponent, SearchComponent } from '../../atoms';
-import { ShowCardComponent } from '../../molecules';
+import { HeaderComponent, ShowCardComponent } from '../../molecules';
 
 @Component({
   selector: 'tv-maze-show-search-page',
   standalone: true,
-  imports: [SearchComponent,LoaderComponent,NoDataComponent,ShowCardComponent],
+  imports: [
+    SearchComponent,
+    LoaderComponent,
+    NoDataComponent,
+    ShowCardComponent,
+    HeaderComponent,
+  ],
   templateUrl: './show-search-page.component.html',
-  styleUrl: './show-search-page.component.scss'
+  styleUrl: './show-search-page.component.scss',
 })
 export class ShowSearchPageComponent {
-
   private tvMazeService: ShowService = inject(ShowService);
   public shows: Show[] = [];
   public noData = false;
@@ -38,7 +43,6 @@ export class ShowSearchPageComponent {
           }
         });
     }
-      this.shows = [];
-    
+    this.shows = [];
   }
 }

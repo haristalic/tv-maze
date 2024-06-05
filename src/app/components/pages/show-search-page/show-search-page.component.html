@@ -1,20 +1,17 @@
-<div class="tv-maze-search-page--layout">
-  <div class="tv-maze-search-page--search">
-    <tv-maze-search (searchEventChange)="filter($event)"></tv-maze-search>
-  </div>
+<tv-maze-header (searchEventChange)="filter($event)"></tv-maze-header>
 
-  @if(noData){
-  <div class="tv-maze-search-page--centred">
-    <tv-maze-no-data></tv-maze-no-data>
-  </div>
-  } @if (loader){
-  <div class="tv-maze-search-page--centred">
-    <tv-maze-loader></tv-maze-loader>
-  </div>
-  }
+<div class="tv-maze-search-page--layout">
   <div class="tv-maze-search-page--card-container">
     @for (show of shows; track show.id) {
     <tv-maze-show-card [show]="show"></tv-maze-show-card>
+    } @if(noData){
+    <div class="tv-maze-search-page--centred">
+      <tv-maze-no-data></tv-maze-no-data>
+    </div>
+    } @if (loader){
+    <div class="tv-maze-search-page--centred">
+      <tv-maze-loader></tv-maze-loader>
+    </div>
     }
   </div>
 </div>

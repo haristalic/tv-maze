@@ -1,0 +1,16 @@
+<header class="tv-maze-header">
+  <div class="tv-maze-header--content">
+    <div class="tv-maze-header--logo">
+      <a routerLink="/">
+        <img src="assets/images/tvm-header-logo.png" alt="Logo"
+      /></a>
+    </div>
+    @if(showSearch){
+    <div class="tv-maze-header--search">
+      <tv-maze-search
+        (searchEventChange)="searchValueChanged($event)"
+      ></tv-maze-search>
+    </div>
+    }
+  </div>
+</header>

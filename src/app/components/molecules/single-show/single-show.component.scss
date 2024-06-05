@@ -52,3 +52,15 @@ h2 {
         flex-direction: column;
     }
 }
+
+.no-img {
+    object-fit: contain;
+    width: 200px;
+    height: auto;
+    min-height: 250px;
+    line-height: 280px;
+    text-align: center;
+    border: 1px solid rgb(213, 130, 22);
+    filter: blur(10px);
+    margin-bottom:10px;
+}

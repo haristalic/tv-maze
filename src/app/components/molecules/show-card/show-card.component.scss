@@ -18,8 +18,9 @@
         width: 100%;
         height: auto;
         min-height: 250px;
-        line-height:280px;
+        line-height: 280px;
         text-align: center;
+        font-size: 0.75em
     }
 
     &--content {
@@ -34,6 +35,7 @@
         text-overflow: ellipsis;
         width: 100%;
     }
+
     &--summary {
         font-size: 0.7em;
         color: #666;
@@ -46,5 +48,8 @@
         max-height: 4.5em;
         min-height: 4.5em;
     }
+}
 
+.tv-maze-card--img.blurred {
+    filter: blur(10px);
 }
